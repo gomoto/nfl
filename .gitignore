@@ -1,0 +1,6 @@
+node_modules
+client/bower_components
+
+server/config/stormpath.js
+server/kitten.js
+npm-debug.log

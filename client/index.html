@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nfl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="NFL player data">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <title>NFL Player Data</title>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.min.js"></script>
+  <script type="text/javascript" src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.tpls.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+  <div ui-view></div>
+  <a if-not-user ui-sref="login">Login</a>
+  <a if-not-user ui-sref="register">Register</a>
+  <a if-user ui-sref="protected" sp-logout>Logout</a>
+</body>
+</html>

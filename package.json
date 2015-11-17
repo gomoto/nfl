@@ -1,0 +1,24 @@
+{
+  "name": "nfl",
+  "scripts": {
+    "serve": "NODE_ENV='development' node server/app.js"
+  },
+  "devDependencies": {
+    "mongoose": "^4.2.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "connect-livereload": "^0.5.3",
+    "cookie-parser": "^1.4.0",
+    "ejs": "^2.3.4",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "express-stormpath": "^2.2.0",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0",
+    "stormpath": "^0.14.0"
+  }
+}
